@@ -1,0 +1,324 @@
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Email Verifier Pro – Bulk Email Addresses Validation | Full C# Source Code</title>
+    <!-- Stylesheets -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/scrollbar.css" rel="stylesheet">
+    <link href="assets/css/all.min.css" rel="stylesheet" type="text/css">
+    <link rel="icon" href="./assets/images/fav.png" sizes="20x20" type="image/png">
+    <!-- Responsive -->
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.11/jquery.mousewheel.min.js"></script><script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.11/jquery.mousewheel.min.js"></script><script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.11/jquery.mousewheel.min.js"></script><script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.11/jquery.mousewheel.min.js"></script></head>
+
+<body>
+    <div class="overlay"></div>
+    <!--Page Wrapper-->
+    <header class="d-md-none">
+        <div class="container">
+            <div class="header-wrapper">
+                <div class="logo text-right d-md-none"><a href="#"><img src="assets/images/logo.png" alt=""></a></div>
+                <div class="menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+					
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="page-wrapper">
+
+        <!--Sidebar-->
+        <aside id="sidebar" class="">
+
+            <!--Menu Box-->
+            <div class="menu-box mCustomScrollbar _mCS_1 mCS_no_scrollbar"><div id="mCSB_1" class="mCustomScrollBox mCS-light mCSB_vertical mCSB_inside" tabindex="0"><div id="mCSB_1_container" class="mCSB_container mCS_y_hidden mCS_no_scrollbar_y" style="position:relative; top:0; left:0;" dir="ltr"><div id="mCSB_1" class="mCustomScrollBox mCS-light mCSB_vertical mCSB_inside" tabindex="0"><div id="mCSB_1_container" class="mCSB_container mCS_y_hidden mCS_no_scrollbar_y" style="position:relative; top:0; left:0;" dir="ltr"><div id="mCSB_1" class="mCustomScrollBox mCS-light mCSB_vertical mCSB_inside" tabindex="0"><div id="mCSB_1_container" class="mCSB_container mCS_y_hidden mCS_no_scrollbar_y" style="position:relative; top:0; left:0;" dir="ltr"><div id="mCSB_1" class="mCustomScrollBox mCS-light mCSB_vertical mCSB_inside" tabindex="0"><div id="mCSB_1_container" class="mCSB_container mCS_y_hidden mCS_no_scrollbar_y" style="position:relative; top:0; left:0;" dir="ltr">
+                <!--Logo-->
+                <br>
+                <div class="logo text-right"><a href="#"><img src="assets/images/logo.png" alt=""></a></div>
+
+                <!--Sticky Menu-->
+                <nav class="sticky-menu">
+                    <ul>
+                        <li class=""><a href="#introduction">Introduction </a></li>
+                        <li class=""><a href="#server">Installed request</a></li>
+                        <li class=""><a href="#faq">Server FAQ</a></li>
+                        <li class=""><a href="#setup">How to Install</a></li>
+                        <li class=""><a href="#folder">Folder Structure</a></li>
+                        <li class=""><a href="#dashboard">Software Dashboard</a></li>
+						<li class=""><a href="#miners">Result</a></li>
+						<li class=""><a href="#plan">Result folder</a></li>
+						<li class=""><a href="#sales">Visual Studio</a></li>
+                        <li class=""></li>
+                        
+                        
+                        <li class=""></li>
+                        <li class=""><a href="#gateway">Filter Domain Mail Gmail Link
+
+</a></li>
+                        <li class=""><a href="#udashboard">User Manual</a></li>
+                        <li class="current"><a href="#support">Support </a></li>
+                    </ul>
+
+                </nav>
+
+            </div><div id="mCSB_1_scrollbar_vertical" class="mCSB_scrollTools mCSB_1_scrollbar mCS-light mCSB_scrollTools_vertical" style="display: none;"><div class="mCSB_draggerContainer"><div id="mCSB_1_dragger_vertical" class="mCSB_dragger" style="position: absolute; min-height: 0px; height: 0px; top: 0px;" oncontextmenu="return false;"><div class="mCSB_dragger_bar" style="line-height: 0px;"></div></div><div class="mCSB_draggerRail"></div></div></div></div></div><div id="mCSB_1_scrollbar_vertical" class="mCSB_scrollTools mCSB_1_scrollbar mCS-light mCSB_scrollTools_vertical"><div class="mCSB_draggerContainer"><div id="mCSB_1_dragger_vertical" class="mCSB_dragger" style="position:absolute;" oncontextmenu="return false;"><div class="mCSB_dragger_bar"></div></div><div class="mCSB_draggerRail"></div></div></div></div></div><div id="mCSB_1_scrollbar_vertical" class="mCSB_scrollTools mCSB_1_scrollbar mCS-light mCSB_scrollTools_vertical"><div class="mCSB_draggerContainer"><div id="mCSB_1_dragger_vertical" class="mCSB_dragger" style="position:absolute;" oncontextmenu="return false;"><div class="mCSB_dragger_bar"></div></div><div class="mCSB_draggerRail"></div></div></div></div></div><div id="mCSB_1_scrollbar_vertical" class="mCSB_scrollTools mCSB_1_scrollbar mCS-light mCSB_scrollTools_vertical"><div class="mCSB_draggerContainer"><div id="mCSB_1_dragger_vertical" class="mCSB_dragger" style="position:absolute;" oncontextmenu="return false;"><div class="mCSB_dragger_bar"></div></div><div class="mCSB_draggerRail"></div></div></div></div></div>
+
+            <div class="copyright">Copyright © <a href="https://drakelam.com">Drake Lam</a> 2021</div>
+        </aside>
+
+        <div id="content-section">
+
+            <!--Introduction Section-->
+            <section class="section introduction" id="introduction">
+                <div class="sec-title">
+                    <i class="icon far fa-clone"></i>
+                    <h2>Intoduction</h2>
+                </div>
+                <div class="sec-content">
+                    <h2>Email Verifier Pro – Bulk Email Addresses Validation | Full C# Source Code
+</h2>
+                    <h3>Email Verifier Pro – Bulk Email Addresses Validation | Full C# Source Code
+</h3>
+                    <div class="separator"></div>
+                    <strong>Created :</strong> 2021-10-24<br>
+                    <strong>By :</strong> <a href="https://codecanyon.net/user/lightelements" target="_blank">Light Elements</a><br>
+                    <strong>Email :</strong> lamvandinhdev@gmail.com <br>
+
+                    <br>
+
+                   
+
+                    <p><span class="">YOUR BUSINESS NEED A GOOD TOOL TO CHECK HUGE VOLUME OF REAL, OR TEMPORARY MAIL.&nbsp;</span>SUPPORT THEIR WORK.&nbsp;DAILY WE RECEIVE QUESTIONS FROM MANY CUSTOMERS FOR THIS INSTRUMENT AND WE HAVE BEEN SHARED AT A REASONABLE PRICE.<br>
+WE DO NOT PROVIDE A REFUND POLICY IF DOWNLOADED BOOK.&nbsp;SO, IF YOU DOWNLOAD AND INSTALL THE Script, YOU ARE LOSE OF OUR MONEY BACK POLICY.<br>
+WHY THE SOFTWARE WORKS 100% AND DOES THE WORK IT SHOULD DO.&nbsp;BEFORE PURCHASING, PLEASE CHECK THE SYSTEM WATCHING VIDEO INSTRUCTIONS AND DETAILED PHOTOS ABOUT IT’S ACCURACY OF OPERATION.&nbsp;CAN ALSO SEE THIS PRODUCT INTRODUCTION DOCUMENT.<br>
+IF THERE IS A PROBLEM, PLEASE MAKE SURE YOU READ THE BOOK DOCUMENT AND APPLY THE FIX TO IT.&nbsp;PLEASE DON’T ASK US WHEN YOU APPLY THE MAIL TEST TOO LARGE TO THE PERFORMANCE OF TOOLS, BECAUSE EVERY TOOL HAS LIMITS.&nbsp;READ MIN REQUIREMENTS FOR Script.&nbsp;(VISUAL STUDIO 2019) IF ANY QUESTIONS BEFORE BUYING, PLEASE CONTACT THE CONTROL SUPPORT TABLE.&nbsp;WE ARE VERY FRIENDLY AND WILL BE READY TO HELP YOU ANY QUESTION AND INSTALLATION PROBLEM YOU ARE ASKING OR IF FINDING ANY Fault in GREAT LEADERSHIP.&nbsp;WE ARE MAKING NEW UPDATES BY STEP.</p>
+<p>BUYING SOURCE CODE EMAIL VERIFIER PRO NEEDED C# PROGRAMMING TECHNICAL EXPERIENCE TO UNDERSTAND DOCUMENTS, PRODUCTS, SOURCE CODES.&nbsp;VERY DETAILED SOURCE CODE, VERY DETAILED PRODUCT SOURCE CODE, A C# 1 YEAR EXPERIENCE.&nbsp;YOUR PURCHASE CAN BE USED IMMEDIATELY OR CAN DEVELOP UP, DEPENDING ON YOUR PURPOSE.&nbsp;IF NO, YOU CAN CONTACT PEOPLE WHO KNOW ABOUT .NET TECHNOLOGY.&nbsp;WE CANNOT HELP INSTALL THE GUIDE ON THE CUSTOMER’S SERVER BECAUSE THIS IS THE COMPLETE SOURCE CODE.&nbsp;WE REQUIRE YOU TO READ OUR CODECANYON SUPPORT AND LIMITATION LICENSE.</p>
+
+
+                     
+
+
+                    
+
+                </div>
+
+            </section>
+            <!--Server Requirements-->
+            <section class="section css-structure" id="server">
+                <div class="sec-title">
+                    <i class="fas fa-server"></i>
+                    <h2>Installed request</h2>
+                </div>
+                <div class="sec-content">
+
+                    <p>
+
+                        ✓ .NET Framework 4.6+<br>
+                        ✓ DrakeUI.Framework.dll<br> 
+    ✓ xNET.dll <br>
+    ✓Newtonsoft.Json.dll<br><br>
+                    </p> 
+                </div>
+
+            </section>
+
+            <!--Server Requirements-->
+            <section class="section css-structure" id="faq">
+                <div class="sec-title">
+                    <i class="fas fa-server"></i>
+                    <h2>Software Introduction.
+
+</h2>
+                </div>
+                <div class="sec-content">
+
+
+                    
+
+
+
+                    
+
+                    <ul>
+<li>Software to check and validate email addresses in bulk.</li>
+<li>Export and import email addresses in bulk for verification</li>
+<li>Save and export email addresses explicitly.</li>
+<li>Test 3 main mail formats: Gmail, HotMail, Yahoo.</li>
+<li>Multi-threading support, make your work faster.</li>
+<li>Support 3 types of Proxy, help you check large amount of mail.</li>
+<li>Full detailed source code with documentation.</li>
+</ul>
+                    
+                    
+
+                </div>
+            </section>
+
+
+            <!--How to SETUP-->
+            <section class="section css-structure" id="setup">
+                <div class="sec-title">
+                    <i class="fas fa-cog"></i>
+                    <h2>How to Install</h2>
+                </div>
+
+                <div class="sec-content">
+
+                    <p>Installation is very easy with our Easy Installer. You can install yourself simply in few steps without any coding knowledge. We develop our installation system to make the installation process flawless and easy.</p>
+
+
+
+                    <h2 class="my-40">Installation Steps: </h2>
+
+
+                    <p>
+                        </p><ol>
+                            <li>There are 2 setups 32bit and 64bit</li>
+                            <li>You choose the right one for your computer.</li>
+                            <li>Enjoy.</li>
+                        </ol>
+                    <p></p>
+
+                    
+					
+In this step, I will guide everyone to use and install quickly.
+<br><br>
+First turn at the main screen interface of the software.<br><br><br><br>
+<img class="alignnone wp-image-944 size-large" src="assets/images/loadfolder.jpg" alt="" width="1010" height="713"><br><br>
+<img class="alignnone wp-image-944 size-large" src="assets/images/load.jpg" alt="" width="1010" height="713"><br><br>
+<img class="alignnone wp-image-944 size-large" src="assets/images/1.jpg" alt="" width="719" height="404"><br><br>
+<img class="alignnone wp-image-944 size-large" src="assets/images/3.jpg" alt="" width="719" height="404"><br><br>
+<br><br>
+You choose Mail to check, here there are 3 main types of mail: Gmail, Hotmail, Yahoo.&nbsp;At the main screen of the Gmail page. You see its parameters.<br><br>
+<ol>
+ 	<li><span class="goog-text-highlight">If you check the "Use Proxy" function, you can open the Proxy.</span></li>
+ 	<li>Open Data: Includes buttons, open mail files, open proxy and open file storage folder</li>
+ 	<li>Information: Parameters, input data and check tool process</li>
+ 	<li>Start App : Functions to start Tool.</li>
+ 	<li>To start the process press the START button.&nbsp;When finished, press STOP.</li>
+ 	<li>You can check mail volume up to 30 million mails.</li>
+</ol>
+<img class="alignnone wp-image-944 size-large" src="assets/images/4.jpg" alt="" width="719" height="404"><br><br>
+<img class="alignnone wp-image-944 size-large" src="assets/images/5.jpg" alt="" width="719" height="404"><br><br>
+<img class="alignnone wp-image-944 size-large" src="assets/images/6.jpg" alt="" width="719" height="404"><br><br>
+<img class="alignnone wp-image-944 size-large" src="assets/images/7.jpg" alt="" width="719" height="404"><br><br>
+<img class="alignnone wp-image-944 size-large" src="assets/images/8.jpg" alt="" width="719" height="404"><br><br>
+&nbsp;
+<br><br>
+At the main screen "Mail Other Mail" is the same, only when checking you need to choose the correct Yahoo and Hotmail format and remember to tick 1 of 2 mail types and start checking.<br><br>
+
+<img class="alignnone wp-image-944 size-large" src="assets/images/9.jpg" alt="" width="719" height="404"><br><br>
+<img class="alignnone wp-image-944 size-large" src="assets/images/10.jpg" alt="" width="719" height="404"><br><br>
+<img class="alignnone wp-image-944 size-large" src="assets/images/11.jpg" alt="" width="719" height="404"><br><br>
+<img class="alignnone wp-image-944 size-large" src="assets/images/2.jpg" alt="" width="719" height="404"><br><br>
+&nbsp;You can watch the video here!
+<br><br>
+<video width="400" controls="">
+  <source src="assets\images\videohelp.mp4" type="video/mp4">
+</video>
+<br><br>
+                    <p class="lead"> If you are still unable to install the system, please contact us.</p>
+
+                    
+
+
+                    
+
+                    
+                </div>
+
+            </section>
+
+            <!--How to Edit-->
+            
+
+
+
+
+            
+		 
+		 
+
+			
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+
+
+      
+       
+
+      
+
+        
+
+		<section class="section html-structure" id="udashboard">
+            <div class="sec-title">
+                <i class="fa fa-file-invoice-dollar"></i>
+                <h2>Function</h2>
+            </div>
+            <ul>
+ 	<li><img class="emoji" role="img" draggable="false">&nbsp;Bulk email address validation</li>
+ 	<li><img class="emoji" role="img" draggable="false">&nbsp;Export and Import a variety of Mail addresses quickly.</li>
+ 	<li><img class="emoji" role="img" draggable="false">&nbsp;Support Fake IP using Proxy(HTTP/S, S4, S5).</li>
+ 	<li><img class="emoji" role="img" draggable="false">Support Multi-threading (max 250 threads)</li>
+ 	<li><img class="emoji" role="img" draggable="false">Nice layout, easy usage.</li>
+ 	<li><img class="emoji" role="img" draggable="false">&nbsp;Filter Bulk Mail, Efficiently.</li>
+ 	<li><img class="emoji" role="img" draggable="false">&nbsp;Filter 3 Main Mail formats: Gmail, Yahoo, HotMail..</li>
+</ul>
+        </section>
+		
+	
+       
+
+        <!--Support-->
+        <section class="section support" id="support">
+            <div class="sec-title"><i class="fas fa-headset"></i>
+                <h2>Support</h2>
+            </div>
+            <div class="sec-content">
+
+                <h3>Once again, thank you so much for purchasing this Source Code. As I said at the beginning, I'd be glad to help you if you have any questions relating to this Source Code. No guarantees, but I'll do my best to assist. If you have any queries, please feel free to contact us at Support Center.</h3>
+
+                <p>Email Us :  <a href="https://drakelam.com/contact/" target="_blank">https://drakelam.com/contact/</a> </p>
+
+            </div>
+
+        </section>
+
+
+    </div>
+
+
+</div>
+<!--End pagewrapper-->
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="assets/js/jquery.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/jquery.nav.js"></script>
+<script src="assets/js/jquery.scrollTo.js"></script>
+<script src="assets/js/scrollbar.js"></script>
+<script src="assets/js/script.js"></script>
+<script>
+	$(document).on('ready', function() {
+        $('.menu-toggle').on('click', function () {
+            $(this).toggleClass('active');
+            $('#sidebar').toggleClass('active');
+            $('.overlay').toggleClass('active');
+        })
+        $('.overlay').on('click', function () {
+            $('#sidebar').removeClass('active');
+            $('.overlay').removeClass('active');
+            $('.menu-toggle').removeClass('active');
+        })
+    });
+</script>
+
+</body></html>
